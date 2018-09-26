@@ -1,0 +1,30 @@
+.dialog-wrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 4; }
+  .dialog-wrap .dialog-modal {
+    max-width: 960px;
+    width: 100%;
+    margin: 20px auto 0px auto;
+    padding: 10px 15px 10px 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06); }
+    .dialog-wrap .dialog-modal .close-button {
+      float: right;
+      font-size: 1.5em;
+      cursor: pointer; }
+    .dialog-wrap .dialog-modal .dialog-modal-content .countdown-form {
+      width: 50%; }
+      .dialog-wrap .dialog-modal .dialog-modal-content .countdown-form .countdown-name {
+        display: block; }
+      .dialog-wrap .dialog-modal .dialog-modal-content .countdown-form .countdown-time {
+        display: block; }
+        .dialog-wrap .dialog-modal .dialog-modal-content .countdown-form .countdown-time .form-input {
+          width: 50%; }
+      .dialog-wrap .dialog-modal .dialog-modal-content .countdown-form .countdown-buttons {
+        text-align: center; }
