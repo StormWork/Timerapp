@@ -1,0 +1,53 @@
+.dialog-wrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  z-index: 4;
+
+  .dialog-modal {
+    max-width: 960px;
+    width: 100%;
+
+    margin: 20px auto 0px auto;
+    padding: 10px 15px 10px 15px;
+    border-radius: 3px;
+
+    background-color: #fff;
+    box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
+
+    .close-button {
+      float: right;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    .dialog-modal-content {
+
+      .countdown-form {
+        width: 50%;
+
+        .countdown-name {
+          display: block;
+        }
+
+        .countdown-time{
+          display: block;
+
+          .form-input{
+            width: 50%;
+          }
+        }
+
+        .countdown-buttons{
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}

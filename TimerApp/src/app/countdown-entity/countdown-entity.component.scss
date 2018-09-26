@@ -1,16 +1,111 @@
 .countdown-wrap{
   width: 100%;
   height: 100px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
 
-  cursor: pointer;
+  .countdown-content{
+    height: 100px;
+    width: 100%;
 
-  background: #ffaf4b; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffaf4b 0%, #ff920a 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffaf4b 0%,#ff920a 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffaf4b 0%,#ff920a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
 
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.51);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.51);
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.51);
+    padding-left: 10px;
+
+    .timer-name{
+      font-size: 1.4em;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .time-remaining{
+      color: #fff;
+      font-size: 2.4em;
+    }
+  }
+
+  .countdown-controls{
+    position: absolute;
+    top: 0px;
+    transform: translateY(50%);
+    right: 20px;
+    z-index: 3;
+
+    .button{
+      color: #fff;
+      font-size: 2em;
+      cursor: pointer;
+      border-radius: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      float: left;
+
+      margin-right: 10px;
+
+      &:last-of-type{
+        margin-right: 0px;
+      }
+
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .countdown-background-wrap{
+    height: 100px;
+    width: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    .countdown-inner-wrap {
+      position: relative;
+      height: 100px;
+      width: 100%;
+      top: 0px;
+
+      .start-colour {
+        background-color: #5165f9;
+        height: 100px;
+        width: 100%;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      .gradient-colour {
+        background: linear-gradient(0deg, #f9463f, #5165f9);
+        height: 500px;
+        width: 100%;
+
+        position: absolute;
+        top: 100px;
+        left: 0px;
+      }
+
+      .end-color {
+        background-color: #f9463f;
+        height: 100px;
+        width: 100%;
+
+        position: absolute;
+        top: 600px;
+        left: 0px;
+      }
+
+    }
+
+  }
+
 }

@@ -1,3 +1,7 @@
-<countdown-entity></countdown-entity>
-<countdown-entity></countdown-entity>
-<countdown-entity></countdown-entity>
+<app-countdown-dialog [display]="timerService.dialog"></app-countdown-dialog>
+
+<div class="central-body">
+  <app-navbar></app-navbar>
+
+  <countdown-entity *ngFor="let countdown of timerService.countdowns" [countdownObject]="countdown"></countdown-entity>
+</div>
