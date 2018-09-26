@@ -27,7 +27,7 @@ export class CountdownObject{
     if(this.now > this.end){
       return "00";
     }else{
-      return new String(Math.floor((this.end - this.now) / 60));
+      return (Math.floor((this.end - this.now) / 60)).toString();
     }
   }
 
@@ -42,9 +42,9 @@ export class CountdownObject{
       if(seconds < 0){
         return "00";
       }else if(seconds < 10){
-        return "0" + new String(seconds);
+        return "0" + seconds.toString();
       }else {
-        return new String(seconds);
+        return seconds.toString();
       }
     }
   }
