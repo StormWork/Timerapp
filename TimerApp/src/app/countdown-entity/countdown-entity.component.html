@@ -1,0 +1,40 @@
+<div class="countdown-wrap">
+
+  <div class="countdown-background-wrap" #backgroundWrap>
+    <div class="countdown-inner-wrap" [style.top.px]="getTop()">
+      <div class="start-colour"></div>
+      <div class="gradient-colour"></div>
+      <div class="end-color"></div>
+    </div>
+  </div>
+
+  <div class="countdown-content">
+    <div class="timer-name">
+      {{countdownObject.name}}
+    </div>
+    <div class="time-remaining">
+      {{countdownObject.minutesString}}:{{countdownObject.secondsString}}
+    </div>
+  </div>
+
+  <div class="countdown-controls">
+    <div class="timer-button button" *ngIf="countdownObject.paused && !countdownObject.ended" (click)="countdownObject.start()">
+      <span class="oi oi-media-play"></span>
+    </div>
+
+    <div class="timer-button button" *ngIf="!countdownObject.paused && !countdownObject.ended" (click)="countdownObject.pause()">
+      <span class="oi oi-media-pause"></span>
+    </div>
+
+    <div class="timer-button button" *ngIf="countdownObject.ended" (click)="countdownObject.restart()">
+      <span class="oi oi-reload"></span>
+    </div>
+
+    <div class="delete-button button" (click)="deleteSelf()">
+      <span class="oi oi-x"></span>
+    </div>
+
+
+  </div>
+
+</div>

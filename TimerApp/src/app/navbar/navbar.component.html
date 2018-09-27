@@ -1,0 +1,17 @@
+<div class="nav-wrap">
+  <div class="add-button" (click)="timerService.dialog = true">
+    <span class="oi oi-plus"></span>
+  </div>
+
+  <div class="pause-button" (click)="timerService.pauseAll()">
+    <span class="oi oi-media-pause"></span>
+  </div>
+
+  <div class="play-button" (click)="timerService.playAll()">
+    <span class="oi oi-media-play"></span>
+  </div>
+
+  <div class="mute-button" (click)="timerService.muted = !timerService.muted">
+    <span class="oi" [ngClass]="{'oi-volume-high': !timerService.muted, 'oi-volume-off': timerService.muted}"></span>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+.countdown-wrap {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  margin-bottom: 10px; }
+  .countdown-wrap .countdown-content {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    padding-left: 10px; }
+    .countdown-wrap .countdown-content .timer-name {
+      font-size: 1.4em;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+      color: #fff;
+      text-transform: uppercase; }
+    .countdown-wrap .countdown-content .time-remaining {
+      color: #fff;
+      font-size: 2.4em; }
+  .countdown-wrap .countdown-controls {
+    position: absolute;
+    top: 0px;
+    transform: translateY(50%);
+    right: 20px;
+    z-index: 3; }
+    .countdown-wrap .countdown-controls .button {
+      color: #fff;
+      font-size: 2em;
+      cursor: pointer;
+      border-radius: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      float: left;
+      height: 48px;
+      margin-right: 10px; }
+      .countdown-wrap .countdown-controls .button:last-of-type {
+        margin-right: 0px; }
+      .countdown-wrap .countdown-controls .button:hover {
+        background-color: rgba(0, 0, 0, 0.2); }
+      .countdown-wrap .countdown-controls .button.delete-button {
+        font-size: 1.8em; }
+        .countdown-wrap .countdown-controls .button.delete-button:hover {
+          color: #f92535; }
+  .countdown-wrap .countdown-background-wrap {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1; }
+    .countdown-wrap .countdown-background-wrap .countdown-inner-wrap {
+      position: relative;
+      height: 100px;
+      width: 100%;
+      top: 0px; }
+      .countdown-wrap .countdown-background-wrap .countdown-inner-wrap .start-colour {
+        background-color: #5165f9;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px; }
+      .countdown-wrap .countdown-background-wrap .countdown-inner-wrap .gradient-colour {
+        background: linear-gradient(0deg, #f9463f, #5165f9);
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0px; }
+      .countdown-wrap .countdown-background-wrap .countdown-inner-wrap .end-color {
+        background-color: #f9463f;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 600px;
+        left: 0px; }

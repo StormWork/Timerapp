@@ -1,0 +1,21 @@
+.nav-wrap {
+  padding: 10px 5px 10px 5px;
+  height: 55px; }
+  .nav-wrap .add-button {
+    float: left; }
+  .nav-wrap .play-button, .nav-wrap .mute-button {
+    float: right;
+    margin-right: 5px; }
+  .nav-wrap .pause-button {
+    float: right; }
+  .nav-wrap .add-button, .nav-wrap .pause-button, .nav-wrap .play-button, .nav-wrap .mute-button {
+    padding: 2px 0px 2px 0px;
+    font-size: 1.4em;
+    text-align: center;
+    min-width: 35px;
+    cursor: pointer;
+    border-radius: 3px; }
+    .nav-wrap .add-button.inactive, .nav-wrap .pause-button.inactive, .nav-wrap .play-button.inactive, .nav-wrap .mute-button.inactive {
+      color: rgba(0, 0, 0, 0.5); }
+    .nav-wrap .add-button:hover, .nav-wrap .pause-button:hover, .nav-wrap .play-button:hover, .nav-wrap .mute-button:hover {
+      background-color: rgba(0, 0, 0, 0.2); }

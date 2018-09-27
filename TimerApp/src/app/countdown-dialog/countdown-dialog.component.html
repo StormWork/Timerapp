@@ -1,0 +1,44 @@
+<div class="dialog-wrap" *ngIf="popupVisible">
+  <div class="dialog-modal">
+    <div class="close-button" (click)="timeService.dialog = false;"><span class="oi oi-x"></span></div>
+
+    <div class="dialog-modal-content">
+      <h3>Create new countdown</h3>
+
+      <form [formGroup]="inputForm" class="countdown-form" (submit)="onFormSubmit()">
+
+        <mat-form-field class="countdown-name">
+          <input matInput placeholder="Countdown name" formControlName="name" value="">
+        </mat-form-field>
+
+        <div class="countdown-time">
+          <mat-form-field class="form-input">
+            <input type="text" placeholder="Minutes" matInput formControlName="minutes" [matAutocomplete]="auto">
+
+            <mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption>
+              <mat-option *ngFor="let minute of filteredMinutes | async" [value]="minute">{{minute}}</mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+
+          <mat-form-field class="form-input">
+            <input type="text" placeholder="Seconds" matInput formControlName="seconds" [matAutocomplete]="autoB">
+
+            <mat-autocomplete #autoB="matAutocomplete" autoActiveFirstOption>
+              <mat-option *ngFor="let second of filteredSeconds | async" [value]="second">{{second}}</mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-checkbox formControlName="auto">Auto start</mat-checkbox>
+        </div>
+
+        <div class="countdown-buttons">
+          <button mat-button type="submit">Create</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
