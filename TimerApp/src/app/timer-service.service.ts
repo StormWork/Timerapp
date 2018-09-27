@@ -10,19 +10,42 @@ export class TimerService {
   private countdownObjs: CountdownObject[] = [];
   private dialogVisible: boolean = false;
 
-  /**
-   * Countdown Object example =
-   * {
-   *  name: "name here",
-   *  start: 967578575488754,
-   *  end: 96865758776585
-   *  paused: false
-   *
-   * }
-   */
+  private audioClip: any;
+
+  private tick: any;
 
   constructor() {
+    this.tick = setInterval(() => { this.doTick(); }, 100);
+    this.audioClip = new Audio('assets/aegis.mp3');
+    this.audioClip.loop = false;
+  }
 
+
+  private doTick(): void{
+    let time = new Date().getTime();
+
+    for(let countdown of this.countdownObjs){
+      let endedBefore = countdown.ended;
+
+      if(!countdown.paused)
+        countdown.tick(time);
+
+        if(countdown.ended && endedBefore != countdown.ended){
+          this.playSound();
+        }
+    }
+  }
+
+  public playAll(): void{
+    for(let countdown of this.countdownObjs){
+      countdown.start();
+    }
+  }
+
+  public pauseAll(): void{
+    for(let countdown of this.countdownObjs){
+      countdown.pause();
+    }
   }
 
   public get dialog(): boolean{
@@ -34,11 +57,17 @@ export class TimerService {
   }
 
   public get muted(): boolean{
+
     return this.soundMuted;
   }
 
   public set muted(val: boolean){
     this.soundMuted = val;
+
+    if(this.soundMuted){
+      this.audioClip.pause();
+      this.audioClip.currentTime = 0;
+    }
   }
 
   public get countdowns(): CountdownObject[]{
@@ -46,16 +75,34 @@ export class TimerService {
   }
 
   public createCountdown(name: string, minutes: number, seconds: number, immediateStart: boolean): void{
-    let start = new Date().getTime() / 1000;
-    let end = start + (minutes * 60) + seconds;
+    let start = new Date().getTime();
     let paused = !immediateStart;
     let totalSeconds = (minutes * 60) + seconds;
 
-    this.countdownObjs.push(new CountdownObject(
-      name,
+    var newObject = new CountdownObject(name,
       totalSeconds,
-      paused
-    ));
+      true);
+
+    if(immediateStart) newObject.start();
+
+    this.countdownObjs.unshift(newObject);
+  }
+
+  public deleteCountdown(countdownObj: CountdownObject): void{
+    this.countdownObjs.splice(this.countdownObjs.indexOf(countdownObj), 1);
+  }
+
+  public playSound(): void{
+    //if(this.audioClip.ended || !this.audioClip.played){
+
+    if(!this.soundMuted) {
+      if(this.audioClip.ended){
+        this.audioClip.currentTime = 0;
+      }
+
+      this.audioClip.play();
+    }
+    //}
   }
 
 

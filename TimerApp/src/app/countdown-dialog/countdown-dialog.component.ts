@@ -65,7 +65,12 @@ export class CountdownDialogComponent implements OnInit {
 
       this.timeService.createCountdown(this.inputForm.value['name'], parseInt(this.inputForm.value['minutes']), parseInt(this.inputForm.value['seconds']), this.inputForm.value['auto']);
 
-      this.inputForm.reset();
+      this.inputForm.reset({
+        name: null,
+        minutes: '',
+        seconds: '',
+        auto: this.inputForm.value['auto']
+      });
 
       this.timeService.dialog = false;
     }

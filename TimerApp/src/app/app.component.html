@@ -3,5 +3,5 @@
 <div class="central-body">
   <app-navbar></app-navbar>
 
-  <countdown-entity *ngFor="let countdown of timerService.countdowns" [countdownObject]="countdown"></countdown-entity>
+  <countdown-entity *ngFor="let countdown of timerService.countdowns" [countdownObject]="countdown" [countdownProgress]="countdown.percentage"></countdown-entity>
 </div>

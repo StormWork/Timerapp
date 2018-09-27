@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core';
 import * as $ from 'jquery';
 import {CountdownObject} from "../countdownObject";
+import {TimerService} from "../timer-service.service";
 
 @Component({
   selector: 'countdown-entity',
@@ -10,15 +11,15 @@ import {CountdownObject} from "../countdownObject";
 export class CountdownEntityComponent implements OnInit, AfterViewInit {
 
   @Input('countdownObject') countdownObject: CountdownObject;
+  @Input('countdownProgress') percentage: number;
 
   @ViewChild('backgroundWrap') background;
   private backgroundQuery: any;
-  private playing: boolean;
 
-  constructor() { }
+  constructor(private timerService: TimerService) { }
 
   ngOnInit() {
-    this.playing = false;
+
   }
 
   ngAfterViewInit(){
@@ -27,16 +28,12 @@ export class CountdownEntityComponent implements OnInit, AfterViewInit {
     }
   }
 
-  private entityClicked(): void{
-    if(this.playing){
-      this.backgroundQuery.find(".countdown-inner-wrap").eq(0).stop();
-    }else{
-      this.backgroundQuery.find(".countdown-inner-wrap").eq(0).animate({
-        top: "-600px"
-      }, 10000);
-    }
+  public deleteSelf(): void{
+    this.timerService.deleteCountdown(this.countdownObject);
+  }
 
-    this.playing = !this.playing;
+  public getTop(): number{
+    return -500 * this.percentage;
   }
 
 }

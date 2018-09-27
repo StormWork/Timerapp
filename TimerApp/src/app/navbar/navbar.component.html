@@ -3,11 +3,11 @@
     <span class="oi oi-plus"></span>
   </div>
 
-  <div class="pause-button">
+  <div class="pause-button" (click)="timerService.pauseAll()">
     <span class="oi oi-media-pause"></span>
   </div>
 
-  <div class="play-button">
+  <div class="play-button" (click)="timerService.playAll()">
     <span class="oi oi-media-play"></span>
   </div>
 

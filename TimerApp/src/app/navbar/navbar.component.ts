@@ -8,7 +8,7 @@ import {TimerService} from "../timer-service.service";
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private timerService: TimerService) { }
+  constructor(public timerService: TimerService) { }
 
   ngOnInit() {
   }

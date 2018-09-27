@@ -4,7 +4,8 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-bottom: 10px; }
   .countdown-wrap .countdown-content {
     height: 100px;
     width: 100%;
@@ -36,11 +37,16 @@
       padding-left: 10px;
       padding-right: 10px;
       float: left;
+      height: 48px;
       margin-right: 10px; }
       .countdown-wrap .countdown-controls .button:last-of-type {
         margin-right: 0px; }
       .countdown-wrap .countdown-controls .button:hover {
         background-color: rgba(0, 0, 0, 0.2); }
+      .countdown-wrap .countdown-controls .button.delete-button {
+        font-size: 1.8em; }
+        .countdown-wrap .countdown-controls .button.delete-button:hover {
+          color: #f92535; }
   .countdown-wrap .countdown-background-wrap {
     height: 100px;
     width: 100%;

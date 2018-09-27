@@ -9,7 +9,7 @@ import {TimerService} from "./timer-service.service";
 export class AppComponent implements OnInit {
   title = 'TimerApp';
 
-  public constructor(private timerService: TimerService): void{
+  constructor(public timerService: TimerService){
     //this.timerService.createCountdown("Galaxy", 25, 0, false);
   }
 

@@ -5,6 +5,7 @@
   position: relative;
   box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.01), 0 15px 32px 0 rgba(0, 0, 0, 0.06);
   border-radius: 3px;
+  margin-bottom: 10px;
 
   .countdown-content{
     height: 100px;
@@ -46,6 +47,7 @@
       padding-left: 10px;
       padding-right: 10px;
       float: left;
+      height: 48px;
 
       margin-right: 10px;
 
@@ -55,6 +57,14 @@
 
       &:hover{
         background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &.delete-button{
+        font-size: 1.8em;
+
+        &:hover{
+          color: #f92535;
+        }
       }
     }
   }
