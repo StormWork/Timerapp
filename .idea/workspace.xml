@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2d7e80-8ed1-41b0-8c15-f5546daf2f06" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/3rdpartylicenses.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/aegis.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/css/open-iconic-bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/css/open-iconic-bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/css/open-iconic-foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/fonts/open-iconic.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/fonts/open-iconic.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/fonts/open-iconic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/fonts/open-iconic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/assets/fonts/open-iconic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/main.d9489135c599c3efff12.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/open-iconic.3cf97837524dd7445e9d.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/open-iconic.47151e87c5a8666791a9.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/open-iconic.93cc7aa654ae36b08287.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/open-iconic.eca2c26759a009a4a936.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/polyfills.f6ae3e8b63939c618130.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/runtime.ec2944dd8b20ec099bf3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/scripts.d740c76c9a2961c5765f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live/styles.16ac1b4b13003869433b.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/live/index.html" afterPath="$PROJECT_DIR$/live/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,11 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="countdownObject.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="countdownObject.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TimerApp/src/app/countdownObject.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="610">
               <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/live/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,13 +163,13 @@
         <option value="$PROJECT_DIR$/TimerApp/src/app/navbar/navbar.component.ts" />
         <option value="$PROJECT_DIR$/TimerApp/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/live/index.html" />
         <option value="$PROJECT_DIR$/TimerApp/src/app/countdown-dialog/countdown-dialog.component.html" />
         <option value="$PROJECT_DIR$/TimerApp/src/app/countdown-dialog/countdown-dialog.component.ts" />
         <option value="$PROJECT_DIR$/TimerApp/src/app/timer-service.service.ts" />
         <option value="$PROJECT_DIR$/TimerApp/src/app/countdown-dialog/countdown-dialog.component.scss" />
         <option value="$PROJECT_DIR$/TimerApp/src/app/countdown-entity/countdown-entity.component.html" />
         <option value="$PROJECT_DIR$/TimerApp/src/app/countdownObject.ts" />
+        <option value="$PROJECT_DIR$/live/index.html" />
       </list>
     </option>
   </component>
@@ -334,6 +324,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimerApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimerApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="live" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -461,7 +465,7 @@
       <workItem from="1538085248654" duration="1837000" />
       <workItem from="1538137314253" duration="3081000" />
       <workItem from="1538392701933" duration="676000" />
-      <workItem from="1541458171086" duration="1756000" />
+      <workItem from="1541458171086" duration="2043000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1537967456842</created>
@@ -614,10 +618,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46016000" />
+    <option name="totallyTimeSpent" value="46303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-9" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19621749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -626,7 +631,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.47951144" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.4826635" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969603" sideWeight="0.47793537" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969603" sideWeight="0.47793537" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -757,7 +762,7 @@
         <state relative-caret-position="170">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -942,7 +947,7 @@
         <state relative-caret-position="170">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -974,14 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1046,6 +1043,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
           <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/live/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
