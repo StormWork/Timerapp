@@ -13,6 +13,14 @@
 
         <div class="countdown-time">
           <mat-form-field class="form-input">
+            <input type="text" placeholder="Hours" matInput formControlName="hours" [matAutocomplete]="auto">
+
+            <mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption>
+              <mat-option *ngFor="let minute of filteredMinutes | async" [value]="minute">{{minute}}</mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+
+          <mat-form-field class="form-input">
             <input type="text" placeholder="Minutes" matInput formControlName="minutes" [matAutocomplete]="auto">
 
             <mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption>

@@ -10,6 +10,7 @@ export class CountdownObject{
 
   private timeMinutes: string;
   private timeSeconds: string;
+  private timeHours: string;
 
   constructor(public name: string, public seconds: number, public paused: boolean){
     this.now = new Date().getTime() / 1000;
@@ -21,13 +22,24 @@ export class CountdownObject{
 
     this.timeMinutes = "00";
     this.timeSeconds = "00";
+    this.timeHours = "00";
 
     this.initialiseTime(this.seconds);
   }
 
   private initialiseTime(seconds: number): void{
-    let minutes = Math.floor(seconds / 60);
-    let secondsB = seconds - (minutes * 60);
+    let hours = Math.floor(seconds / (60 * 60));
+
+    let minutes = Math.floor((seconds - (hours * 60 * 60)) / 60);
+    let secondsB = seconds - (minutes * 60) - (hours * 60 * 60);
+
+    if(hours <= 0){
+      this.timeHours = "00";
+    }else if(hours < 10){
+      this.timeHours = "0" + hours.toString();
+    }else{
+      this.timeHours = hours.toString();
+    }
 
     if(minutes <= 0){
       this.timeMinutes = "00";
@@ -67,6 +79,10 @@ export class CountdownObject{
 
   public get secondsString(): string{
     return this.timeSeconds;
+  }
+
+  public get hoursString(): string{
+    return this.timeHours;
   }
 
   public start(): void{

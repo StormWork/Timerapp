@@ -74,10 +74,10 @@ export class TimerService {
     return this.countdownObjs;
   }
 
-  public createCountdown(name: string, minutes: number, seconds: number, immediateStart: boolean): void{
+  public createCountdown(name: string, hours: number, minutes: number, seconds: number, immediateStart: boolean): void{
     let start = new Date().getTime();
     let paused = !immediateStart;
-    let totalSeconds = (minutes * 60) + seconds;
+    let totalSeconds = (hours * 60 * 60) + (minutes * 60) + seconds;
 
     var newObject = new CountdownObject(name,
       totalSeconds,
